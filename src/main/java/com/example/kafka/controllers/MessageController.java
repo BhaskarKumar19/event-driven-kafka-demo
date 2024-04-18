@@ -16,7 +16,7 @@ public class MessageController {
 
     @PostMapping("/send")
     public void sendMessage(@RequestBody String message){
-        producerService.sendMessage("test",message);
+        producerService.sendMessage("exp-test",message);
     }
 
     @GetMapping("/ping")
